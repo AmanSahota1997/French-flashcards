@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<! -- cd "/Users/amansahota/Desktop/French" -->
+<! -- python3 -m http.server 8000 -->
+<! -- http://localhost:8000/ -->
+
+<head>
+  <meta charset="UTF-8">
+  <title>French Flashcards</title>
+  <link rel="icon" href="data:,">
+<style>
+  :root {
+    --bg: #f4f6f8;
+    --card-bg: #ffffff;
+    --primary: #4f46e5;
+    --green: #16a34a;
+    --red: #dc2626;
+    --yellow: #f59e0b;
+    --text: #111827;
+    --muted: #6b7280;
+  }
+
+  body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    margin: 0;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .app {
+    max-width: 520px;
+    width: 100%;
+    text-align: center;
+  }
+
+  h1 {
+    margin-bottom: 10px;
+    font-size: 2rem;
+  }
+
+  #progress {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #eef2ff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+  }
+
+  select {
+    padding: 6px 10px;
+    border-radius: 6px;
+    border: 1px solid #d1d5db;
+    font-size: 0.95rem;
+  }
+
+  .card {
+    background: var(--card-bg);
+    border-radius: 14px;
+    padding: 50px 30px;
+    font-size: 2.2rem;
+    min-height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    margin: 30px 0;
+    position: relative;
+  }
+
+  .card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 14px 30px rgba(0,0,0,0.12);
+  }
+
+  #answerButtons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  button {
+    border: none;
+    border-radius: 8px;
+    padding: 10px 18px;
+    font-size: 0.95rem;
+    cursor: pointer;
+    background: #e5e7eb;
+    transition: background 0.15s ease, transform 0.1s ease;
+  }
+
+  button:hover {
+    transform: translateY(-1px);
+  }
+
+  button:active {
+    transform: translateY(0);
+  }
+
+  button.correct {
+    background: #dcfce7;
+    color: var(--green);
+  }
+
+  button.wrong {
+    background: #fee2e2;
+    color: var(--red);
+  }
+
+  button.learned {
+    background: #fef3c7;
+    color: var(--yellow);
+  }
+
+  #resetBtn {
+    background: transparent;
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+
+  #resetBtn:hover {
+    text-decoration: underline;
+  }
+
+/* Category label */
+.card .category-label {
+  position: absolute;
+  bottom: 12px;
+  right: 16px;
+  font-size: 0.75rem;
+  color: #6b7280;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  opacity: 0.75;
+}
+</style>
+
+</head>
+<body>
+<div class="app">
+<h1>Flashcards</h1>
+
+<div id="progress">
+  <span id="progressText">Learning: 0 | Learned: 0</span>
+  <button id="resetBtn">Reset Progress</button>
+</div>
+
+
+<label>
+  Direction:
+  <select id="direction">
+    <option value="en-fr">English → French</option>
+    <option value="fr-en">French → English</option>
+  </select>
+</label>
+
+<br><br>
+
+<div id="card" class="card">Loading...</div>
+
+<div id="answerButtons" style="display:none;">
+  <button class="correct" onclick="markAnswer(true)">✔ Correct</button>
+  <button class="wrong" onclick="markAnswer(false)">✘ Wrong</button>
+  <button class="learned" id="markLearnedBtn">⭐ Mark Learned</button>
+</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

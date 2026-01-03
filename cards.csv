@@ -125,15 +125,15 @@ En ligne,Online,Things
 Fermier,Farmer,Things
 Des achats,Purchases,Things
 D'occasion,Second hand,Things
-Tenue,Outfit,Things
+La tenue,Outfit,Things
 Démodé,Out of fashion,Things
 J'aime le bleu,I like the blue item,Phrases
-Chapeau,Hat,Things
+Le chapeau,Hat,Things
 Clairs/foncé,Light/dark,Things
-Gants,Gloves,Things
+Les gants,Gloves,Things
 En cuir,In leather,Things
-Écharpe,Scarf,Things
-Manteau/veste,Coat/jacket,Things
+L'echarpe,Scarf,Things
+Le manteau/la veste,Coat/jacket,Things
 Des lunettes de soleil,Sunglasses,Things
 Un short,Shorts,Things
 Le gôut,Taste,Things
@@ -141,7 +141,7 @@ Des saveurs,Flavours,Things
 "sale, sucré, acide, amer","savoury, sweet, sour, bitter",Things
 Partout,Everywhere,Things
 La malbouffe,Junkfood,Things
-produits laitiers,Dairy products,Things
+Le produit laitier,Dairy product,Things
 Un foyer,Household,Things
 Une assiete,A plate,Things
 Un sandwich au thon,Tuna sandwich,Things
@@ -162,7 +162,7 @@ Il y a eu,There were,Connecting words
 Deux fois par semaine,Twice a week,Phrases
 La natation,Swimming,Activities
 La gestion,Management,Activities
-Déchets,(Household) waste,Things
+Les déchets,(Household) waste,Things
 Léger/lourd,Light/heavy,Description
 Être,To be,Verbs
 Avoir,To have,Verbs
@@ -229,40 +229,40 @@ Séparer,To separate,Verbs
 Incluer,To include,Verbs
 Atteindre,To reach,Verbs
 Casser,To break,Verbs
-Frère,Brother,Relations
-Sœur,Sister,Relations
-Père,Father,Relations
-Mère,Mother,Relations
-Cousin,Cousin,Relations
-Ami,Friend,Relations
-Gars,Guy (buddy),Relations
-Voisin,Neighbour,Relations
-Fils,Son/boy,Relations
-Fille,Daughter/girl,Relations
+Le frère,Brother,Relations
+La sœur,Sister,Relations
+Le père,Father,Relations
+La mère,Mother,Relations
+Le cousin,Cousin,Relations
+L'ami,Friend,Relations
+Le gars,Guy (buddy),Relations
+Le voisin,Neighbour,Relations
+Le fils,Son/boy,Relations
+La fille,Daughter/girl,Relations
 Un bèbè,Baby,Relations
 Un(e) enfant,Infant,Relations
 Un(e) personne âgée,Old person,Relations
 Un(e) adolescent,Teenager,Relations
 Un(e) adulte,Adult,Relations
 Un(e) petit-enfant,Grandchild,Relations
-Tante,Aunt,Relations
-Oncle,Uncle,Relations
-Petit-fils,Grandson,Relations
-Petite-fille,Granddaughter,Relations
-FDrôle,unny,Description
-Ennuyeux,Boring,Description
-Bavarde,Talkative,Description
-Silencieux,Silent,Description
+La tante,Aunt,Relations
+L'oncle,Uncle,Relations
+Le petit-fils,Grandson,Relations
+La petite-fille,Granddaughter,Relations
+Drôle,Funny,Description
+Ennuyeux/ennuyeuse,Boring,Description
+Bavard/bavarde,Talkative,Description
+Silencieux/silencieuse,Silent,Description
 Optimiste,Optimistic,Description
 Pessimiste,Pessimist,Description
-Rêveuse,Dreamer,Description
+Rêveur/Rêveuse,Dreamer,Description
 Réaliste,Realist,Description
 Timide,Shy,Description
 Téméraire,Bold,Description
 Colérique,Angry,Description
 Calme,Calm,Description
-Gentil,Nice,Description
-Méchant,Mean,Description
+Gentil/gentille,Nice,Description
+Méchant/méchante,Mean,Description
 Une Pierre,Stone,Things
 Une Falaise,Cliff,Things
 Un Arbre,Tree,Things
